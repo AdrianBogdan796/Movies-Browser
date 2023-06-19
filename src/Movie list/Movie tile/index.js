@@ -1,26 +1,28 @@
 import {
   Tile,
-  TileImage as Image,
+  TileTitle as Title,
+  TileSubtitle as Subtitle,
   TileTag as Tag,
   TileTags as Tags,
-  TileTitle as Title,
-} from "../src/components/Tile";
-import { Container } from "./components/Container";
+} from "../../components/Tile";
+import { MoviesPage } from "../features/movies/MoviesPage";
 import poster from "./images/poster.png";
 
+<Title> Popular movies </Title>;
 function MoviesPage() {
   return (
-    <Container>
+    <>
       <Tile>
         <Image src={poster} alt="" />
         <Title>Mulan</Title>
+        <Subtitle>2020</Subtitle>
         <Tags>
           <Tag>Action</Tag>
           <Tag>Action</Tag>
           <Tag>Action</Tag>
         </Tags>
       </Tile>
-    </Container>
+    </>
   );
 }
 
