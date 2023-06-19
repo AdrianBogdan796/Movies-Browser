@@ -1,5 +1,12 @@
-import { Tile, TileTitle as Title } from "../src/components/Tile";
+import {
+  Tile,
+  TileImage as Image,
+  TileTag as Tag,
+  TileTags as Tags,
+  TileTitle as Title,
+} from "../src/components/Tile";
 import { Container } from "./components/Container";
+import poster from "./images/poster.png";
 
 function MoviesPage() {
   return (
