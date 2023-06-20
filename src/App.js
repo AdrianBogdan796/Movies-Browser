@@ -1,39 +1,37 @@
-import { Container } from "./components/Container";
-import {
-  Tile,
-  TileContent as Content,
-  TileDescription as Description,
-  TileImage as Image,
-  TileTag as Tag,
-  TileTags as Tags,
-  TileTitle as Title,
-  TileSubtitle as Subtitle,
-} from "./components/Tile";
 import poster from "./images/poster.png";
+import {
+  Header,
+  Tile,
+  MoviesTile,
+  Title,
+  Subtitle,
+  Tags,
+  Tag,
+  Image,
+  Description,
+  MoviesTileFrame,
+} from "./Movie list/Movie tile/styled";
 
-function App() {
+function MoviesPage() {
   return (
-    <Container>
-      <Tile>
+    <Tile>
+      <Header>Popular movies</Header>
+      <MoviesTile>
         <Image src={poster} alt="" />
-        <Content>
-          <Title>Mulan</Title>
-          <Subtitle>2020</Subtitle>
-          <Tags>
-            <Tag>Action</Tag>
-            <Tag>Action</Tag>
-            <Tag>Action</Tag>
-          </Tags>
+        <MoviesTileFrame>
           <Description>
-            A young Chinese maiden disguises herself as a male warrior in order
-            to save her father. Disguises herself as a male warrior in order to
-            save her father. A young Chinese maiden disguises herself as a male
-            warrior in order to save her father.
+            <Title>Mulan</Title>
+            <Subtitle>2020</Subtitle>
+            <Tags>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+            </Tags>
           </Description>
-        </Content>
-      </Tile>
-    </Container>
+        </MoviesTileFrame>
+      </MoviesTile>
+    </Tile>
   );
 }
 
-export default App;
+export default MoviesPage;

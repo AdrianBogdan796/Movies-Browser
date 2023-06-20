@@ -1,11 +1,41 @@
 import { styled } from "styled-components";
 
-export const Tile = styled.article`
-  height: 650px;
-  width: 1368px;
+export const Header = styled.header`
+  position: absolute;
+  width: 285px;
+  height: 43px;
   left: 276px;
-  top: 217px;
-  border-radius: 0px;
+  top: 150px;
+  color: ${({ theme }) => theme.color.black};
+  display: flex;
+  align-items: center;
+`;
+
+export const Tile = styled.article`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 1368px;
+  height: 650px;
+  left: 276px;
+  top: 891px;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 288px;
+    height: 1069px;
+    left: 16px;
+    top: 200px;
+  }
 `;
 
 export const MoviesTile = styled.article`
@@ -20,6 +50,38 @@ export const MoviesTile = styled.article`
   flex: none;
   order: 0;
   flex-grow: 0;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    background: ${({ theme }) => theme.color.white};
+
+    width: 288px;
+    height: 201px;
+    box-shadow: 0px 4px 12px rgba(186, 199, 213, 0.5);
+    border-radius: 5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+`;
+
+export const MoviesTileFrame = styled.article`
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 256px;
+    height: 169px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
 `;
 
 export const Image = styled.img`
@@ -31,6 +93,16 @@ export const Image = styled.img`
 
   background: url(Mulan.jpg);
   border-radius: 5px;
+  @media (max-width: 767px) {
+    position: absolute;
+    width: 114px;
+    height: 169px;
+    left: calc(50% - 114px / 2 - 71px);
+    top: 0px;
+
+    background: url(Mulan.jpg);
+    border-radius: 5px;
+  }
 `;
 
 export const Title = styled.header`
@@ -40,6 +112,18 @@ export const Title = styled.header`
   order: 0;
   align-self: center;
   flex-grow: 0;
+  display: flex;
+  align-items: center;
+  @media (max-width: 767px) {
+    width: 120px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    align-self: center;
+    flex-grow: 0;
+  }
 `;
 
 export const Subtitle = styled.div`
@@ -50,6 +134,17 @@ export const Subtitle = styled.div`
   order: 1;
   align-self: flex-start;
   flex-grow: 0;
+  @media (max-width: 767px) {
+    width: 32px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    color: #7e839a;
+    flex: none;
+    order: 1;
+    align-self: flex-start;
+    flex-grow: 0;
+  }
 `;
 
 export const Tags = styled.ul`
@@ -79,4 +174,33 @@ export const Tag = styled.li`
   flex: none;
   order: 0;
   flex-grow: 0;
+`;
+
+export const Description = styled.p`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 292px;
+  height: 105px;
+  left: 16px;
+  top: 466px;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 126px;
+    height: 128px;
+
+    flex: none;
+    order: 1;
+    align-self: flex-start;
+    flex-grow: 0;
+  }
 `;

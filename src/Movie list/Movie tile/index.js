@@ -1,48 +1,36 @@
-<<<<<<< HEAD
+import poster from "../../images/poster.png";
 import {
+  Header,
   Tile,
-  Image,
-  Tag,
-  Tags,
+  MoviesTile,
   Title,
   Subtitle,
-  MoviesTile
-} from "./styled"
-import poster from "../../images/poster.png";
+  Tags,
+  Tag,
+  Image,
+  Description,
+  MoviesTileFrame,
+} from "./styled";
 
-<Header>Popular movies</Header>;
-
-return MoviesPage(
-  <Tile>
-    <MoviesTile>
-    <Image src={poster} alt="" />
-    <Title>Mulan</Title>
-    <Subtitle>2020</Subtitle>
-    <Tags>
-      <Tag>Action</Tag>
-      <Tag>Action</Tag>
-      <Tag>Action</Tag>
-    <Tags>
-    </MoviesTile>
-  </Tile>
-=======
-import * as styled from "./styled";
-import poster from "../../images/poster.png";
-
-<styled.Header>Popular movies</styled.Header>;
-
-return MoviesPage(
-  <styled.Tile>
-    <styled.TileImage src={poster} alt="" />
-    <styled.TileTitle>Mulan</styled.TileTitle>
-    <styled.TileSubtitle>2020</styled.TileSubtitle>
-    <styled.TileTags>
-      <styled.TileTag>Action</styled.TileTag>
-      <styled.TileTag>Action</styled.TileTag>
-      <styled.TileTag>Action</styled.TileTag>
-    </styled.TileTags>
-  </styled.Tile>
->>>>>>> 146fc696e34c7772778d0aaa4273870ae2653891
-);
+function MoviesPage() {
+  return (
+    <Tile>
+      <MoviesTile>
+        <Image src={poster} alt="" />
+        <MoviesTileFrame>
+          <Description>
+            <Title>Mulan</Title>
+            <Subtitle>2020</Subtitle>
+            <Tags>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+            </Tags>
+          </Description>
+        </MoviesTileFrame>
+      </MoviesTile>
+    </Tile>
+  );
+}
 
 export default MoviesPage;
