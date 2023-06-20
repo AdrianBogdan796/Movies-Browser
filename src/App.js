@@ -1,4 +1,4 @@
-import { Container } from './components/Container';
+import { Container } from "./components/Container";
 import {
   Tile,
   TileContent as Content,
@@ -7,8 +7,8 @@ import {
   TileTag as Tag,
   TileTags as Tags,
   TileTitle as Title,
-  TileSubtitle as Subtitle
-} from './components/Tile';
+  TileSubtitle as Subtitle,
+} from "./components/Tile";
 import poster from "./images/poster.png";
 
 function App() {
@@ -24,8 +24,12 @@ function App() {
             <Tag>Action</Tag>
             <Tag>Action</Tag>
           </Tags>
-          <Description>A young Chinese maiden disguises herself as a male warrior in order to save her father.
-            Disguises herself as a male warrior in order to save her father.  A young Chinese maiden disguises herself as a male warrior in order to save her father.</Description>
+          <Description>
+            A young Chinese maiden disguises herself as a male warrior in order
+            to save her father. Disguises herself as a male warrior in order to
+            save her father. A young Chinese maiden disguises herself as a male
+            warrior in order to save her father.
+          </Description>
         </Content>
       </Tile>
     </Container>
