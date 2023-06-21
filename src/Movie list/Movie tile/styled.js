@@ -1,16 +1,5 @@
 import { styled } from "styled-components";
 
-export const Header = styled.header`
-  position: absolute;
-  width: 285px;
-  height: 43px;
-  left: 276px;
-  top: 150px;
-  color: ${({ theme }) => theme.color.black};
-  display: flex;
-  align-items: center;
-`;
-
 export const Tile = styled.article`
   display: flex;
   flex-direction: row;
@@ -38,7 +27,7 @@ export const Tile = styled.article`
   }
 `;
 
-export const MoviesTile = styled.article`
+export const MoviesTile = styled.div`
   height: 650px;
   width: 324px;
   left: 0px;
@@ -69,6 +58,7 @@ export const MoviesTile = styled.article`
 `;
 
 export const MoviesTileFrame = styled.article`
+  display: flex;
   @media (max-width: 767px) {
     display: flex;
     flex-direction: row;
@@ -98,7 +88,7 @@ export const Image = styled.img`
     width: 114px;
     height: 169px;
     left: calc(50% - 114px / 2 - 71px);
-    top: 0px;
+    top: auto;
 
     background: url(Mulan.jpg);
     border-radius: 5px;
@@ -117,6 +107,11 @@ export const Title = styled.header`
   @media (max-width: 767px) {
     width: 120px;
     height: 21px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
     display: flex;
     align-items: center;
     flex: none;
@@ -137,6 +132,12 @@ export const Subtitle = styled.div`
   @media (max-width: 767px) {
     width: 32px;
     height: 17px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+
     display: flex;
     align-items: center;
     color: #7e839a;
@@ -158,6 +159,21 @@ export const Tags = styled.ul`
   flex: none;
   order: 1;
   flex-grow: 0;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 107px;
+    height: 46px;
+
+    flex: none;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+  }
 `;
 
 export const Tag = styled.li`
@@ -174,6 +190,26 @@ export const Tag = styled.li`
   flex: none;
   order: 0;
   flex-grow: 0;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    gap: 0px;
+
+    width: 48px;
+    height: 19px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 110%;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
 `;
 
 export const Description = styled.p`

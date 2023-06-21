@@ -1,6 +1,5 @@
 import poster from "./images/poster.png";
 import {
-  Header,
   Tile,
   MoviesTile,
   Title,
@@ -15,10 +14,65 @@ import {
 function MoviesPage() {
   return (
     <Tile>
-      <Header>Popular movies</Header>
       <MoviesTile>
-        <Image src={poster} alt="" />
         <MoviesTileFrame>
+          <Image src={poster} alt="" />
+          <Description>
+            <Title>Mulan</Title>
+            <Subtitle>2020</Subtitle>
+            <Tags>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+            </Tags>
+          </Description>
+        </MoviesTileFrame>
+      </MoviesTile>
+      <MoviesTile>
+        <MoviesTileFrame>
+          <Image src={poster} alt="" />
+          <Description>
+            <Title>Mulan</Title>
+            <Subtitle>2020</Subtitle>
+            <Tags>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+            </Tags>
+          </Description>
+        </MoviesTileFrame>
+      </MoviesTile>
+      <MoviesTile>
+        <MoviesTileFrame>
+          <Image src={poster} alt="" />
+          <Description>
+            <Title>Mulan</Title>
+            <Subtitle>2020</Subtitle>
+            <Tags>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+            </Tags>
+          </Description>
+        </MoviesTileFrame>
+      </MoviesTile>
+      <MoviesTile>
+        <MoviesTileFrame>
+          <Image src={poster} alt="" />
+          <Description>
+            <Title>Mulan</Title>
+            <Subtitle>2020</Subtitle>
+            <Tags>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+              <Tag>Action</Tag>
+            </Tags>
+          </Description>
+        </MoviesTileFrame>
+      </MoviesTile>
+      <MoviesTile>
+        <MoviesTileFrame>
+          <Image src={poster} alt="" />
           <Description>
             <Title>Mulan</Title>
             <Subtitle>2020</Subtitle>

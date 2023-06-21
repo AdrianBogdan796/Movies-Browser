@@ -1,6 +1,5 @@
 import poster from "../../images/poster.png";
 import {
-  Header,
   Tile,
   MoviesTile,
   Title,
@@ -16,8 +15,8 @@ function MoviesPage() {
   return (
     <Tile>
       <MoviesTile>
-        <Image src={poster} alt="" />
         <MoviesTileFrame>
+          <Image src={poster} alt="" />
           <Description>
             <Title>Mulan</Title>
             <Subtitle>2020</Subtitle>
