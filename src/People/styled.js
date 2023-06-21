@@ -9,6 +9,13 @@ export const Row = styled.article`
   height: 339px;
   left: 276px;
   top: 217px;
+  @media (max-width: 767px) {
+    position: absolute;
+    width: 288px;
+    height: 767px;
+    left: 16px;
+    top: 202px;
+  }
 `;
 
 export const PersonTile = styled.article`
