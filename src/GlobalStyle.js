@@ -24,7 +24,7 @@ color: ${({ theme }) => theme.color.black};
 @media (max-width: 767px) {
   position: absolute;
 width: 143px;
-height: 22px;
+height: 12px;
 left: 16px;
 top: 150px;
 
